@@ -159,10 +159,7 @@ cat("Confusion Matrix: \n")
 tb
 calculateStats <- function(tb, modelName) {
   acc <- (tb[1] + tb[4])/(tb[1] + tb[2] + tb[3] + tb[4])
-  precision <- tb[1]/(tb[1] + tb[2])
-
-  cat(modelName, ": \n")
+  cat(modelName, "\n")
   cat("\tAccuracy = ", acc*100, "%.")
-  cat("\n\tPrecision = ", precision*100, "%.")
 }
 calcStats <- calculateStats(tb, "Irises:")
